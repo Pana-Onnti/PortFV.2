@@ -1,0 +1,160 @@
+.botonico{
+
+  height: auto;
+  margin-left: 90%;
+}
+
+div {
+  color: aliceblue;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.columnleft {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-right: 1px solid #ffc700 ;
+
+
+
+}
+.columnright {
+  float: right;
+  width: 50%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1{
+  text-align: center;
+}
+.tituloleft {
+  float: left;
+  width: 50%;
+
+}
+
+.titulolright {
+  float: right;
+  width: 50%;
+  text-decoration: underline 1px  rgba(43, 47, 42, 0.58);
+
+}
+
+#titulo
+  {
+    font-family: 'Julius Sans One';
+
+
+    color: #F5F5F5;
+    text-align: center;
+    border-bottom: 1px solid rgba(43, 47, 42, 0.58);
+    margin-left:20% ;
+    margin-right:20% ;
+
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 38px;
+  letter-spacing: 0.035em;
+
+  }
+#font {
+  font-family: 'Julius Sans One';
+  padding-top: 5%;
+  color: white;
+}
+
+.example-card{
+  background-color: rgba(43, 47, 42, 0.58)
+  ;
+  font-family: 'Jaldi';
+  margin-top: 5%;
+  color: aliceblue;
+
+
+}
+
+#subtitulo{
+  border-bottom: 1px solid rgba(43, 47, 42, 0.58);
+  margin-left:20% ;
+  margin-right:20% ;
+}
+
+
+.mat-card-title{
+  font-size: x-large;
+  color: aliceblue;
+
+}
+
+.mat-card-subtitle{
+  font-size: large;
+  color: aliceblue;
+
+}
+
+.divider {
+  border-top: 1px solid #FFC700;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+@media (max-width: 1200px){
+  img {
+    width: 0%;
+    height: 0%;
+  }
+  .mat-card-title{
+    font-size: large;
+    color: aliceblue;
+
+  }
+
+  .mat-card-subtitle{
+    font-size: medium;
+    color: aliceblue;
+
+  }
+
+
+
+    }
+@media (max-width: 900px){
+  img {
+    width: 0%;
+    height: 0%;
+  }
+  .mat-card-title{
+    font-size: medium;
+    color: aliceblue;
+
+  }
+
+  .mat-card-subtitle{
+    font-size: small;
+    color: aliceblue;
+
+  }
+}
+
+.nueva{
+  display: block;
+  width: 50%;
+}
+

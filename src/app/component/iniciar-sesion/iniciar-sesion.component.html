@@ -1,0 +1,27 @@
+HOLAAA
+<div class="conteiner">
+      <form  #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+
+
+        <!-- User input -->
+        Usuario y Contraseña
+        <div class="User ">
+          <input type="text" autofocus name="nombreUsuario"  [(ngModel)]="nombreUsuario" required/>
+        </div>
+
+
+        <!-- Password input -->
+
+        <div class="Password">
+
+          <input type="password"  name="password"  [(ngModel)]="password" required/>
+
+        </div>
+
+
+
+        <!-- Submit button -->
+        <button type="submit" >Entrar</button>
+      </form>
+</div>

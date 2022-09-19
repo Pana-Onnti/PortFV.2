@@ -1,0 +1,64 @@
+.contenedor {
+  border: 2px solid #FFC700;
+  border-radius: 25px;
+  padding: 20px 30px 20px 30px;
+  align-items: center;
+}
+
+.divider {
+  border-top: 1px solid #FFC700;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+#titulo
+  {
+    font-family: 'Julius Sans One';
+
+
+    color: #F5F5F5;
+    text-align: center;
+    border-bottom: 1px solid rgba(43, 47, 42, 0.58);
+    margin-left:20% ;
+    margin-right:20% ;
+
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 38px;
+  letter-spacing: 0.035em;
+
+  }
+
+  .example-card{
+    background-color: rgba(43, 47, 42, 0.58)
+    ;
+    font-family: 'Jaldi';
+    margin-top: 2%;
+    color: aliceblue;
+
+  }
+  div {
+    color: aliceblue;
+
+  }
+p{
+  color: aliceblue;
+}
+.mat-card-title{
+  font-size: x-large;
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 0px;
+
+}
+
+.mat-card-subtitle{
+  font-size: large;
+  color: aliceblue;
+  margin-bottom: 0px;
+
+}

@@ -1,0 +1,88 @@
+
+
+button{
+
+  font-size: 0.8em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: 'Jaldi';
+  width: 20%;
+  background-color:#949398FF;
+  font-family: 'Jaldi';
+  color:  black;
+  border-radius: 20px;
+}
+.inputd{
+  border: 1px solid  rgba(68, 74, 72, 0.248);
+  border-radius: 10px;
+  text-align: center;
+  height: 3em;
+  width: 40%;
+  background-color: rgba(43, 47, 42, 0.58);
+  font-family: 'Jaldi';
+}
+
+.conteiner {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Jaldi';
+  color:  #FFC700;
+  font-size: 30px;
+  margin-top: 50px;
+  border: solid 1px #FFC700;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 20px;
+
+}
+
+.Password{
+  display: flex;
+
+}
+.User {
+  display: flex;
+}
+.User input {
+  margin-top: 10px;
+
+  border: 1px solid  rgba(68, 74, 72, 0.248);
+  border-radius: 10px;
+  text-align: center;
+  height: 2em;
+  width: 100%;
+  font-size: 20px;
+  background-color:#949398FF;
+  font-family: 'Jaldi';
+  color: #FFC700;
+}
+.Password input{
+  margin-top: 10px;
+  border: 1px solid  rgba(68, 74, 72, 0.248);
+  border-radius: 10px;
+  text-align: center;
+  height: 2em;
+  width: 100%;
+  background-color:#949398FF;
+  font-family: 'Jaldi';
+  color:  #FFC700;
+  font-size: 20px;
+  margin-top: 3%;
+
+}
+
+form{
+  width: 50%;
+  text-align: center;
+  justify-items: auto;
+}
+
+
+
+
+

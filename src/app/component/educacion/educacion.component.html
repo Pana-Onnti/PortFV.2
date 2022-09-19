@@ -1,0 +1,87 @@
+
+<section class="divider" id="font" >
+  <h3>Lorem Ipsum is simply dummy text of the printing and
+    typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown
+    printer took a galley of type and scrambled it to make a type
+    specimen book. It has survived not only five centuries, but also
+    the leap into electronic typesetting, remaining essentially
+    unchanged. It was popularised in the 1960s with the release of
+    Letraset sheets containing Lorem Ipsum passages, and more
+    recently with desktop publishing software like Aldus
+    PageMaker including versions of Lorem Ipsum</h3>
+</section>
+<br>
+<h1 id="titulo">Mi Educacion</h1>
+<br>
+
+<section style="color:aliceblue">
+  <div class="botonico">
+  <app-button-add *ngIf="isLogged" (click)="crearEdu()" label="Añadir"></app-button-add>
+  </div>
+  <div class="row">
+    <!-- titulos -->
+    <div class="tituloleft" style="  font-family: 'Julius Sans One';
+   ">
+      <h1>Educacion Formal</h1>
+    </div>
+    <div class="titulolright" style="   font-family: 'Julius Sans One';
+  ">
+      <h1>Cursos Extras</h1>
+    </div>
+    <!-- titulos -->
+
+    <!-- Columnas Derecha
+    <div class="columnright">
+      <mat-card class="example-card" *ngFor="let curs of cursos">
+        <mat-card-title-group>
+          <mat-card-title>{{curs.institucion}}
+          </mat-card-title>
+          <mat-card-subtitle>{{curs.titulo}}
+
+          </mat-card-subtitle>
+          <mat-card-subtitle>{{curs.FechaInicio }} // {{curs.FechaFinal}}
+
+          </mat-card-subtitle>
+          <img mat-card-sm-image src="./assets/img2/kkkk.png">
+        </mat-card-title-group>
+      </mat-card>
+    </div>
+    -->
+  <!-- Columnas Izquierda-->
+    <section>
+
+
+    <div class="columnleft">
+      <mat-card class="example-card" *ngFor="let Edu of edu">
+        <mat-card-title-group>
+          <mat-card-title>{{Edu.nombreEdu}}
+          </mat-card-title>
+          <mat-card-subtitle>{{Edu.descripcionEdu}}
+
+          </mat-card-subtitle>
+
+
+          <img mat-card-sm-image src="./assets/img2/kkkk.png">
+          <mat-card-subtitle>
+          <div >
+            <app-button-edit *ngIf="isLogged" (click)="modifcarEdu(Edu)"></app-button-edit>
+            <app-button-delete *ngIf="isLogged" ><i class="bi bi-archive"></i></app-button-delete>
+           </div>
+          </mat-card-subtitle>
+        </mat-card-title-group>
+      </mat-card>
+
+
+    </div>
+
+
+
+
+</section>
+
+
+
+
+
+

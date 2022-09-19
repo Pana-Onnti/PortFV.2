@@ -1,0 +1,2 @@
+ npm run serverAPI
+ ng serve

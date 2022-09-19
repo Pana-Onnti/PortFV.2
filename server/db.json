@@ -1,0 +1,75 @@
+{
+  "estudios": [
+    {
+
+      "institucion": "Universidad Nacional de Río Cuarto ",
+      "titulo": "Ciencias Economicas , Economía ",
+      "FechaInicio": "2019",
+      "FechaFinal": "2024",
+      "curso": true
+    },
+    {
+
+      "institucion": "Universidad Nacional de Río Cuarto ",
+      "titulo": "Ciencias Economicas , Economía ",
+      "FechaInicio": "2019",
+      "FechaFinal": "2024",
+      "curso": true
+
+    },
+    {
+
+      "institucion": "Universidad Nacional de Río Cuarto ",
+      "titulo": "Ciencias Economicas , Economía ",
+      "FechaInicio": "2019",
+      "FechaFinal": "2024",
+      "curso": false
+
+    }
+  ],
+  "Cursos": [
+    {
+
+      "institucion": "Universidad Nacional de Río Cuarto ",
+      "titulo": "Ciencias Economicas , Economía ",
+      "FechaInicio": "2019",
+      "FechaFinal": "2024"
+    },
+    {
+
+      "institucion": "Universidad Nacional de Río Cuarto ",
+      "titulo": "Ciencias Economicas , Economía ",
+      "FechaInicio": "2019",
+      "FechaFinal": "2024"
+    },
+    {
+
+      "institucion": "Universidad Nacional de Río Cuarto ",
+      "titulo": "Ciencias Economicas , Economía ",
+      "FechaInicio": "2019",
+      "FechaFinal": "2024"
+    }
+  ],
+  "experiencias": [
+    {
+      "id": 1,
+      "puesto": "Administrador",
+      "nombre": "Electrocom",
+      "inicio": "Jornada Completa",
+      "final": "Jornada Completa",
+
+      "ciudad": "Río Cuarto, Córdoba, Argentina ",
+      "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+    },
+    {
+      "id": 2,
+      "puesto": "Administrador",
+      "nombre": "Electrocom",
+      "inicio": "Jornada Completa",
+      "final": "Jornada Completa",
+
+      "ciudad": "Río Cuarto, Córdoba, Argentina ",
+      "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+    }
+  ]
+}
