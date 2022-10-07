@@ -6,8 +6,8 @@ import { IniciarSesionComponent } from "./component/iniciar-sesion/iniciar-sesio
 
 const routes : Routes = [
   {path:'' , redirectTo:'/home',pathMatch:'full'},
-  {path: 'login', component:IniciarSesionComponent},
   {path: 'home', component:HomeComponent},
+  {path: 'login', component:IniciarSesionComponent},
 
 
 

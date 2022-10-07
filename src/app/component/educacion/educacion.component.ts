@@ -19,7 +19,6 @@ export class EducacionComponent implements OnInit {
   toNewEdu:Edu = {nombreEdu: "", descripcionEdu: ""};
   toEditEdu!:Edu;
 
-
   constructor(private eduServ:EduServService, private tokenService:TokenService, private router:Router,private modalService: NgbModal) { }
 
 

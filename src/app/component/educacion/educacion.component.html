@@ -9,7 +9,7 @@
     unchanged. It was popularised in the 1960s with the release of
     Letraset sheets containing Lorem Ipsum passages, and more
     recently with desktop publishing software like Aldus
-    PageMaker including versions of Lorem Ipsum</h3>
+    PageMaker including versions of Lorem Ipsum *ngIf="isLogged"</h3>
 </section>
 <br>
 <h1 id="titulo">Mi Educacion</h1>
@@ -17,7 +17,6 @@
 
 <section style="color:aliceblue">
   <div class="botonico">
-  <app-button-add *ngIf="isLogged" (click)="crearEdu()" label="Añadir"></app-button-add>
   </div>
   <div class="row">
     <!-- titulos -->
@@ -49,9 +48,10 @@
     </div>
     -->
   <!-- Columnas Izquierda-->
-    <section>
+  <!--
+  <section>
 
-
+    <h1>{{isLogged}}</h1>  
     <div class="columnleft">
       <mat-card class="example-card" *ngFor="let Edu of edu">
         <mat-card-title-group>
@@ -65,11 +65,12 @@
           <img mat-card-sm-image src="./assets/img2/kkkk.png">
           <mat-card-subtitle>
           <div >
-            <app-button-edit *ngIf="isLogged" (click)="modifcarEdu(Edu)"></app-button-edit>
-            <app-button-delete *ngIf="isLogged" ><i class="bi bi-archive"></i></app-button-delete>
+            
            </div>
           </mat-card-subtitle>
         </mat-card-title-group>
+        <app-button-edit *ngIf="isLogged" (click)="modifcarEdu(Edu)"></app-button-edit>
+        <app-button-delete *ngIf="isLogged" ><i class="bi bi-archive"></i></app-button-delete>
       </mat-card>
 
 
@@ -80,8 +81,43 @@
 
 </section>
 
+-->
+
+<section>
+  <div class="columnleft">
+    <app-button-add *ngIf="isLogged" (click)="crearEdu()" ></app-button-add>
+
+    <mat-card class="example-card" *ngFor="let Edu of edu">
+      <mat-card-subtitle>{{Edu.nombreEdu}}</mat-card-subtitle>
+      <mat-card-title>{{Edu.nombreEdu}}</mat-card-title>
+      <mat-card-content>
+        <p>{{Edu.descripcionEdu}}</p>
+      </mat-card-content>
+      <mat-divider inset></mat-divider>
+      <mat-card-actions>
+        <app-button-edit *ngIf="isLogged" (click)="modifcarEdu(Edu)"></app-button-edit>
+        <app-button-delete *ngIf="isLogged" (click)="delete(Edu.id)"></app-button-delete>
+      </mat-card-actions>
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card>
+    
+
+  </div>
 
 
 
 
+</section>
 
+
+  ///
+
+
+  <div class="example-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="pat@example.com"  required>
+    </mat-form-field>
+  </div>

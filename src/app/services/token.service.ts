@@ -12,12 +12,13 @@ export class TokenService {
 
   roles: Array<string> = [];
   isLogged = new BehaviorSubject<boolean>(false);
+
   constructor() { }
 
   public setToken(token:string):void{
     window.sessionStorage.removeItem(TOKEN_KEY);
     window.sessionStorage.setItem(TOKEN_KEY,token);
-
+    this.isLogged.next(true);
   }
 
   public getToken():string{
@@ -49,8 +50,10 @@ export class TokenService {
   }
 
   public logOut():void{
+    window.sessionStorage.removeItem(TOKEN_KEY);
     window.sessionStorage.clear();
+    this.isLogged.next(false);
   }
-
+    
 
 }

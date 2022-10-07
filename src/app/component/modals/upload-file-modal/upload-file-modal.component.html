@@ -1,0 +1,24 @@
+
+<div>
+    <div class="login-box">
+        <form (ngSubmit)="update()" novalidate #f="ngForm">
+          <div class="user-box">
+              <label for="nombreExp">{{field1name}}</label>
+              <input type="text" class="form-control" id="nombreExp" name="field1" [(ngModel)]="field1" required>
+          </div>
+          <div class="user-box" *ngIf="field3 != null && field3name">
+              <label for="nombreExp">{{field3name}}</label>
+              <input type="text" class="form-control" id="nombreExp" name="field1" [(ngModel)]="field3" required>
+          </div>
+          <div class="user-box">
+              <label for="descripcionExp">{{field2name}}</label>
+              <input #file type="file" id="file" (change)="handleFileInput($event);" />
+          </div>
+          <div>
+              <app-button-add>                  {{butttonText}}
+            </app-button-add>
+              
+          </div>
+      </form>
+  </div>
+</div>

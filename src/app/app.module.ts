@@ -10,7 +10,6 @@ import { IniciarSesionComponent } from './component/iniciar-sesion/iniciar-sesio
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
-import { BodyComponent } from './component/body/body.component';
 import { SkillsComponent } from './component/skills/skills.component';
 import { MaterialModule } from './material.module';
 import { EducacionComponent } from './component/educacion/educacion.component';
@@ -25,14 +24,15 @@ import { ButtonComponent } from './component/button/button.component';
 import { ButtonDeleteComponent } from './component/button-delete/button-delete.component';
 import { ButtonEditComponent } from './component/button-edit/button-edit.component';
 import { HomeComponent } from './component/HOME/home.component';
+import { BodyComponent } from './component/HOME/body/body.component';
+import { UploadFileModalComponent } from './component/modals/upload-file-modal/upload-file-modal.component';
 
-
+BodyComponent
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BodyComponent,
     SkillsComponent,
     EducacionComponent,
     ProyectoComponent,
@@ -45,7 +45,10 @@ import { HomeComponent } from './component/HOME/home.component';
     ButtonComponent,
     ButtonDeleteComponent,
     ButtonEditComponent,
-    HomeComponent
+    HomeComponent,
+    BodyComponent,
+    UploadFileModalComponent
+
 
 
   ],
