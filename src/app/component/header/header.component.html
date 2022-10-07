@@ -1,23 +1,24 @@
 <section>
  <header class="toolbar" >
-    <div class="asd">
-
-      Nicolas Baseggio
-      <div class="asd1">
-        Full-stack Developer
-
-
-      </div>
-    </div>
-
-
-    <div>
+  
+  <div>
+          
           <ul >
+                <li style=" list-style: none ; ">
 
-                <svg xmlns="http://www.w3.org/2000/svg" id="d" color= "#FFC700"width="2.8em" height="3em" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+                  <a href="https://argentinaprograma.inti.gob.ar/" target="_blank" class="nav-link btn1 px-2 text-secondary">Argentina Programa</a>
+
+                </li>
+
+
+                <svg  routerLinkActive="active" routerLink="/login" *ngIf="!isLogged"
+                   xmlns="http://www.w3.org/2000/svg" id="d" color= "#FFC700"width="2.8em" height="3em" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
                   <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
                 </svg>
-
+                <svg  (click)="onLogOut()" *ngIf="isLogged"
+                   xmlns="http://www.w3.org/2000/svg" id="d" color= "#FFC700"width="2.8em" height="3em" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+                  <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+                </svg>
 
 
               <a  href="https://www.linkedin.com/in/nicolas-baseggio/" class="insta1"

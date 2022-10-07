@@ -9,7 +9,7 @@ import { TokenService } from 'src/app/services/token.service';
 
 @Component({
   selector: 'app-body',
-  templateUrl: './body.component.html',
+  templateUrl: './body.component2.html',
   styleUrls: ['./body.component.scss']
 })
 export class BodyComponent implements OnInit {

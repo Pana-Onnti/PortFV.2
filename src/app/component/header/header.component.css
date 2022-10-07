@@ -1,4 +1,6 @@
-
+a{
+  font-family: "Julius Sans One";
+}
 
 .asd{
   font-family: 'Julius Sans One';
@@ -27,8 +29,7 @@ li a {
   font-weight: 400;
   font-size: 30px;
   position: relative;
-  padding-right: 1em;
-
+  
 
 
 }
@@ -36,17 +37,14 @@ li a {
 .insta1 {
   padding-right: 1.5%;
   padding-left: 1.5%;
-  padding-top: 0.3%;
   margin-bottom: 0.5px;
 }
 .insta2{
-  padding-top: 0.3%;
   margin-bottom: 0.5px;
 
 }
 #d{
   float: right;
-  margin-top: 0.35%;
 
 }
 .toolbar {
@@ -60,9 +58,10 @@ li a {
   color: white;
   font-weight: 600;
   padding-right: 3%;
-  padding-left: 3%;
+  padding-left: 1%;
   justify-content: center;
   justify-items: center;
+  border-bottom: 1px solid #FFC700;
 
 
 }
