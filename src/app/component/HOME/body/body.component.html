@@ -1,19 +1,23 @@
+
 <div class="divider">
+HOLAA
   <div class="card">
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="rowflex-lg-row-reverse align-items-center g-5 py-5">
+    <div>
+      <div >
           <div class="row" *ngFor="let Body of body">
             <div class="col-sm-6">
               <h1>Sobre mi:</h1>
               <p class="lead">{{Body.sobreMi}}</p>
               <button class="btn btn-dark" *ngIf="isLogged" (click)="modificarBody(Body)"><i class="bi bi-pen"></i></button>
             </div>
-            <div class="col-sm-6">
-              <img src="{{Body.url_Foto}}" class="brochure-poster d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <div class="avatar">
+              <img src="{{Body.url_Foto}}"   style="border-radius: 1000px;" 
+              class="avatar" width="1000" height="700"  loading="lazy">
             </div>
         </div>
       </div>
-            <app-button-add type="submit" *ngIf="isLogged" (click)="crearBody()"></app-button-add>
+            <app-button-add type="submit"  (click)="crearBody()"></app-button-add>
     </div>
   </div>
 </div>
+

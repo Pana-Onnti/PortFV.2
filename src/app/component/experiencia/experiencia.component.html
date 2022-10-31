@@ -9,13 +9,7 @@
 
     <mat-card-subtitle>{{Experiencia.descripcionExp}}</mat-card-subtitle>
     <mat-card-content>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-         Reiciendis iste possimus, suscipit voluptate odit a inventore autem at vel quaerat nemo,
-          eum aspernatur recusandae veritatis, dolor libero dolores facilis quibusdam..
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus repellat, dolorum et,
-        explicabo architecto deserunt officiis error corrupti saepe magni quos accusamus cumque id
-        deleniti consequatur excepturi fuga expedita inventore?
-      </p>
+     
       <div>
                     <app-button-edit (click)="modificarExp(Experiencia)" *ngIf="isLogged"></app-button-edit>
                     <app-button-delete (click)="delete(Experiencia.id)" *ngIf="isLogged"></app-button-delete>

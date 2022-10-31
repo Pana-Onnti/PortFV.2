@@ -1,33 +1,26 @@
 <div>
   <section id="font">
     <div class="divider">
-      <h3 style="color: white">
-        Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown
-        printer took a galley of type and scrambled it to make a type
-        specimen book. It has survived not only five centuries, but also
-        the leap into electronic typesetting, remaining essentially
-        unchanged. It was popularised in the 1960s with the release of
-        Letraset sheets containing Lorem Ipsum passages, and more
-        recently with desktop publishing software like Aldus
-        PageMaker including versions of Lorem Ipsum
-        Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown
-        printer took a galley of type and scrambled it to make a type
-        specimen book. It has survived not only five centuries, but also
-        the leap into electronic typesetting, remaining essentially
-        unchanged. It was popularised in the 1960s with the release of
-        Letraset sheets containing Lorem Ipsum passages, and more
-        recently with desktop publishing software like Aldus
-        PageMaker including versions of Lorem Ipsum
-      </h3>
+      <h1 style="color: white">
+        Soy un estudiante de Rio Cuarto, luego de terminar el colegio secundario con un marcado perfil técnico 
+ Decidí inclinarme por las ciencias sociales luego de conocer este nuevo campo aplique para estudiar en la carrera de grado 
+ de Licenciado en Economía, allí encontré la pasión por ciertos temas que van desde el estudio macroeconómico, política economía como así también
+ por los mercados financieros tradicionales y De Fi en los cuales estoy más enfocado últimamente; Derivado de esto , comienza en mi camino una nueva rama 
+ que siempre me intereso, corriendo con una leve ventaja al estar tan familiarizado con el uso de la computadora y el internet, 
+ llevo a cabo una serie de aprendizajes con el objetivo de estudiar y utilizar diferentes herramientas de software que mis proyectos
+ me exigían conocer y manejar si quería continuar. 
+ Haciendo un balance de esta primera experiencia puedo pensar ya en donde quiero especializarme, desde Python como mi base, ya que considero que tiene una amplia gama de casos de uso, desde Flask, Django como frameworks de trabajo hasta bibliotecas como NumPy, pandas,Matplotlib y muchas otras para procesos más específicos como desarrollar smart contracts de Ethereum.
+  Dicho esto, proyecto mi roadmap pensando en análisis de datos cuantitativo y cualitativo, luego enfocarme a hacer modelos con IA y  paralelamente llevar a cabo dapps y apps en las diferentes blockchains existentes.
+
+ 
+  Me proyecto en un futuro como una persona con la capacidad técnica y social como para poder integrar equipos de investigación, análisis y desarrollo  que trabajen en busca de soluciones tecnológicas para los mercados financieros tanto tradicionales como los inmersos en la Web 3.
+      </h1>
     </div>
 
   <br>
   </section>
   <h1 id="titulo" >Mis Skills</h1>
+<!--progres bar
 
   <section class="contenedor" id="example2">
     <div class="fila">
@@ -67,50 +60,40 @@
     </div>
 
   </section>
-
   <section class="row" style="margin-bottom: -2%;">
     <div class="column1">
-      <mat-card>Simple card
+      <mat-card *ngFor="let Skills of skill ">
+        {{Skills.nombreS}}
+        {{Skills.percent}}
         <div class="container12">
           <div class="progress progress-striped">
-            <div class="progress-bar">
-            </div>
+            <mat-progress-bar [value]="Skills.percent"></mat-progress-bar>
+            
           </div>
         </div>
+
       </mat-card>
 
-      <mat-card>Simple card
-        <div class="container12">
-          <div class="progress progress-striped">
-            <div class="progress-bar">
-            </div>
-          </div>
-        </div>
-      </mat-card>
+      
 
     </div>
 
 
+    <app-button-add  (click)="crearSkill()" *ngIf="isLogged"  label="Añadir"></app-button-add>
 
     <div class="column2">
-      <mat-card>Simple card
+      <mat-card *ngFor="let Skills of skill ">
+        {{Skills.nombreS}}
+        {{Skills.percent}}
         <div class="container12">
           <div class="progress progress-striped">
-            <div class="progress-bar">
-            </div>
+            <mat-progress-bar [value]="Skills.percent"></mat-progress-bar>
+            
           </div>
         </div>
 
       </mat-card>
-      <mat-card>Simple card
-        <div class="container12">
-          <div class="progress progress-striped">
-            <div class="progress-bar">
-            </div>
-          </div>
-        </div>
-
-      </mat-card>
+     
 
     </div>
 
@@ -118,4 +101,19 @@
   </section>
 
 </div>
+-->
 
+<app-button-add  (click)="crearSkill()"  *ngIf="isLogged" label="Añadir"></app-button-add>
+<section class="contenedor" id="example2">
+    <div class="fila" >
+      <div class="casilla" *ngFor="let Skills of skill">
+        <app-button-delete *ngIf="isLogged" (click)="delete(Skills)"></app-button-delete>    
+        <app-button-edit *ngIf="isLogged" (click)="modificarSkill(Skills)"></app-button-edit>      
+
+        <img src="{{Skills.url_foto}}" alt="dasdd">
+        <span>{{Skills.nombreS}}</span>
+        
+     </div>
+
+
+   
