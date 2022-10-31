@@ -1,24 +1,28 @@
- 
-    <div class="divider" *ngFor="let Body of body">
-        <div >
-            <div class="asd">
-                Nicolas Baseggio
+    
+    <div  *ngFor="let Body of body">
 
-                <div class="asd1">
-                    Full-stack Developer</div>
-             
-            </div>
-        </div>
-
+    <div id="contenedor">
         <div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque modi sapiente optio eaque, et ea
-                sit nemo aut at fuga. Inventore de
-                lorem serunt soluta vel labore iste fugit voluptate excepturi?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deserunt eius eaque deleniti enim. Voluptatum eum, quaerat placeat temporibus tenetur praesentium laboriosam minus facilis vero. Ducimus vero temporibus ex distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, at enim est non nemo asperiores ipsum beatae possimus praesentium aspernatur aperiam quod eligendi! Molestiae, quas velit delectus cumque dolorem aspernatur?
-            </p>
-        </div>
-        <img src="{{Body.url_Foto}}" class="brochure-poster d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <app-button-add type="submit"  *ngIf="isLogged" (click)="crearBody()"></app-button-add>
 
+            <div >
+                <div class="asd">
+                    Nicolas Baseggio
+    
+                    <div class="asd1">
+                        Full-stack Developer</div>
+                 
+                </div>
+            </div>
+          
+        </div>
+        <div>
+            <img src="{{Body.url_Foto}}" style="    border-radius: 50%;
+            " width="300" height="300" loading="lazy">
+            </div>
+      </div>
+      <p class="asd">   {{Body.sobreMi}} </p>
+      <app-button-edit *ngIf="isLogged" (click)="modificarBody(Body)"></app-button-edit>
 
     </div>
+    
