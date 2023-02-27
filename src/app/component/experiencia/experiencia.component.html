@@ -1,0 +1,21 @@
+<div class="divider">
+  <h1 id="titulo" >Mis Experiencias</h1>
+</div>
+<app-button-add  (click)="crearExp()" *ngIf="isLogged" label="Añadir"></app-button-add>
+
+<div class="container">
+  <mat-card class="example-card" *ngFor="let Experiencia of expe ">
+    <mat-card-title>{{Experiencia.nombreExp}}</mat-card-title>
+
+    <mat-card-subtitle>{{Experiencia.descripcionExp}}</mat-card-subtitle>
+    <mat-card-content>
+     
+      <div>
+                    <app-button-edit (click)="modificarExp(Experiencia)" *ngIf="isLogged"></app-button-edit>
+                    <app-button-delete (click)="delete(Experiencia.id)" *ngIf="isLogged"></app-button-delete>
+                </div>
+    </mat-card-content>
+
+  </mat-card>
+</div>
+

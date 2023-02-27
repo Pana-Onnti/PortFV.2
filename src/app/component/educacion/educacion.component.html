@@ -1,0 +1,40 @@
+
+<section class="divider" id="font" >
+  <h3>El stack que tengo actualmente creo que me brinda todas las herramientas necesarias para desarrollar y tener un panorama
+    general de todas las tecnológicas y sus aplicaciones pasando desde el front al back donde me siento más cómodo  </h3>
+</section>
+<br>
+<h1 id="titulo">Mi Educacion</h1>
+<br>
+<section style="align-items: center;" >
+  <div class="row" >
+    <app-button-add *ngIf="isLogged" (click)="crearEdu()" ></app-button-add>
+
+    <mat-card class="example-card" style="margin-left:30%; margin-right: 30%;" *ngFor="let Edu of edu">
+      <mat-card-title>{{Edu.nombreEdu}}</mat-card-title>
+      <mat-card-content>
+        <p>{{Edu.descripcionEdu}}</p>
+      </mat-card-content>
+      <mat-divider inset></mat-divider>
+      <mat-card-actions>
+        <app-button-edit *ngIf="isLogged" (click)="modifcarEdu(Edu)"></app-button-edit>
+        <app-button-delete *ngIf="isLogged" (click)="delete(Edu.id)"></app-button-delete>
+      </mat-card-actions>
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card>
+    
+
+  </div>
+
+
+
+
+</section>
+
+
+
+
+
+

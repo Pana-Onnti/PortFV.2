@@ -1,0 +1,25 @@
+    
+<div *ngFor="let Body of body.slice(body.length-1)">
+    <div class="container-fluid">   
+        <div id="contenedor">
+            <div>
+                <app-button-add type="submit"  *ngIf="isLogged" (click)="crearBody()"></app-button-add>
+
+                <div >
+                        <div class="asd">
+                            Nicolas Baseggio
+            
+                                <div class="asd1">
+                                    Full-stack Developer
+                                </div>
+                        
+                        </div>
+                </div>
+            
+            </div>
+                <div>
+                    <img src="{{Body.url_Foto}}" style="    border-radius: 50%;
+                    " width="300" height="300" loading="lazy">
+                </div>
+    </div> 
+

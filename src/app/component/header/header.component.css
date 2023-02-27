@@ -1,0 +1,96 @@
+a{
+  font-family: "Julius Sans One";
+}
+
+.asd{
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.035em;
+  color: #F5F5F5;
+  float: left;
+  margin-top: 0.8%;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Jaldi';
+  letter-spacing: 0.040em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  position: relative;
+  
+
+
+}
+
+.insta1 {
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  margin-bottom: 0.5px;
+}
+.insta2{
+  margin-bottom: 0.5px;
+
+}
+#d{
+  float: right;
+
+}
+.toolbar {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  padding-right: 3%;
+  padding-left: 1%;
+  justify-content: center;
+  justify-items: center;
+  border-bottom: 1px solid #FFC700;
+
+
+}
+
+.asd2{
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.035em;
+
+  color: #F5F5F5;
+
+
+  filter: blur(2px);
+}
+.asd1{
+  font-family: 'Jaldi';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.055em;
+  color: #FFC700;
+  float: center;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+

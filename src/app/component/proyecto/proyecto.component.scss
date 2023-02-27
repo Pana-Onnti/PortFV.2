@@ -1,0 +1,115 @@
+#titulo
+  {
+    font-family: 'Julius Sans One';
+
+
+    color: #F5F5F5;
+    text-align: center;
+    border-bottom: 1px solid rgba(43, 47, 42, 0.58);
+    margin-left:20% ;
+    margin-right:20% ;
+
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 38px;
+  letter-spacing: 0.035em;
+
+  }
+.divider {
+  border-top: 1px solid #FFC700;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+
+}
+
+div {
+  color: aliceblue;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.columnleft {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-right: 1px solid #ffc700 ;
+
+
+}
+.columnright {
+  float: right;
+  width: 50%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mat-card {
+  font-family: 'Jaldi';
+  background-color: rgba(68, 74, 72, 0.248);
+  color: aliceblue;
+
+}
+.mat-card mat-card-title{
+  font-size: xx-large;
+  text-align: center;
+  display: flex;
+  color: aliceblue;
+
+}
+
+.mat-card-subtitle{
+  font-size: large;
+  color: aliceblue;
+
+}
+
+.mat-card-content{
+  font-size: medium;
+  color: aliceblue;
+
+}
+.mat-card-actions{
+padding-left: 50%;
+}
+
+@media (max-width: 900px){
+  img {
+    width: 0%;
+    height: 0%;
+    align-items: center;
+  }
+  .mat-card mat-card-title{
+    font-size: large;
+    text-align: center;
+    display: flex;
+    color: aliceblue;
+
+  }
+
+  .mat-card-subtitle{
+    font-size: medium;
+    color: aliceblue;
+
+  }
+  .mat-card-content{
+    font-size: small;
+    color: aliceblue;
+
+  }
+}

@@ -1,0 +1,22 @@
+<div>
+  <section id="font">
+    
+
+  <br>
+  </section>
+  <h1 id="titulo" >Mis Skills</h1>
+
+<app-button-add  (click)="crearSkill()"  *ngIf="isLogged" label="Añadir"></app-button-add>
+<section class="contenedor" id="example2">
+    <div class="fila" >
+      <div class="casilla" *ngFor="let Skills of skill">
+        <app-button-delete *ngIf="isLogged" (click)="delete(Skills)"></app-button-delete>    
+        <app-button-edit *ngIf="isLogged" (click)="modificarSkill(Skills)"></app-button-edit>      
+
+        <img src="{{Skills.url_foto}}" alt="dasdd">
+        <span>{{Skills.nombreS}}</span>
+        
+     </div>
+
+
+   

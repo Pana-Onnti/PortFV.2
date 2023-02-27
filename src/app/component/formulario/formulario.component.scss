@@ -1,0 +1,180 @@
+
+
+.divider {
+  border-top: 1px solid #FFC700;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.columnleft {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-right: 1px solid yellow;
+
+
+}
+.columnright {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  padding-left: 4.5%;
+
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columnleftf {
+  float: left;
+  width: 30%;
+  padding-bottom: 5%;
+
+
+}
+.columnrightf {
+  float: right;
+  width: 70%;
+  padding-bottom: 5%;
+}
+
+input{
+  border: 1px solid  rgba(68, 74, 72, 0.248);
+  border-radius: 10px;
+  text-align: center;
+  height: 3em;
+  width: 90%;
+  background-color: rgba(43, 47, 42, 0.58);
+  font-family: 'Jaldi';
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#exampleFormControlTextarea1{
+  border-radius: 10px;
+width: 93%;
+height: 13em;
+background-color: rgba(43, 47, 42, 0.58);
+border: 1px solid  rgba(68, 74, 72, 0.248);
+max-width: 93%;
+max-height: 13em;
+min-width: 93%;
+min-height: 5em;
+}
+
+#subjet{
+  margin-bottom: 5%;
+  width: 93%;
+
+}
+
+#boton{
+ border: 1px solid #FFC700;
+ border-radius: 10px;
+ color: aliceblue;
+ margin-top: 5%;
+ height: 20%;
+ width: 50%;
+ font-family: "Jaldi";
+ padding: 1% 1% 1% 1%;
+}
+
+.icon{
+  display: inline;
+  margin-bottom: 5%;
+}
+
+.nota{
+  display: grid;
+}
+
+h4{
+  margin-top: 0%;
+  margin-bottom: 10%;
+}
+
+@media (max-width: 900px){
+  h4{
+    font-size: 0px;
+    margin-bottom: 0%;
+  }
+  svg {
+    width: 30%;
+    height: 30%;
+    max-width: 30%;
+    max-height: 30%;
+    max-width: 25px;
+
+  }
+
+  p{
+    font-size: medium;
+    font-family: "Jaldi";
+
+  }
+  .icon{
+    display: block;
+    margin-bottom: 0%;
+
+  }
+
+  .nota{
+    display: block;
+    position: relative;
+  }
+  .ide{
+    display: bloc;
+  }
+}
+
+.ide{display:inline-block; vertical-align: top; margin-left: 5%;}
+
+p {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: 'Jaldi';
+}
+
+::placeholder{
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: 'Jaldi';
+}
+button{
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: 'Jaldi';
+}

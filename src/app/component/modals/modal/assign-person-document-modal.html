@@ -1,0 +1,37 @@
+
+
+<div class="login-box">
+    <h2>NOTA</h2>
+    <form form (ngSubmit)="update()" novalidate #f="ngForm">
+      <button type="button" class="btn btn-danger" (click)="closeForm()">Cerrar</button>
+      
+        <div class="user-box">
+            <p for="nombreExp">{{field1name}}</p>
+            <input type="text" class="form-control" id="nombreExp" name="field1" [(ngModel)]="field1" required>
+        </div>
+        <div class="user-box">
+            <p for="descripcionExp">{{field2name}}</p>
+            <input type="text" class="form-control" id="descripcionExp" name="field2" [(ngModel)]="field2" required>
+        </div>
+        <div class="form-group" *ngIf="field3 !== null && field3name">
+            <label for="descripcionExp">{{field3name}}</label>
+            <input type="text" class="form-control" id="Exp" name="field3" [(ngModel)]="field3" required>
+        </div>
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+         <div>
+           <div class="example-button-container">
+            <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+                 <mat-icon>plus_one</mat-icon>
+             </button>
+            </div>
+        </div>
+
+      </a>
+    </form>
+  </div>      
+ 
+ <!-- <div class="user-box"> -->

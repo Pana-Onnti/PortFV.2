@@ -1,0 +1,80 @@
+{
+  "persona":[
+     {
+        "id":1,
+        "nombre":"Nicolas",
+        "apellido":"Baseggio"
+     }
+  ],
+  "header":[
+     {
+        "universidad":" Universidad Nacional de Rio Cuarto",
+        "nombre":"Nicolas",
+        "apellido":"Baseggio",
+        "pais":"argentina"
+     }
+  ],
+  "comments":[
+     {
+        "id":1,
+        "body":"some comment",
+        "postId":1
+     }
+  ],
+  "profile":{
+     "name":"typicode"
+  },
+  "estudios": [
+   {
+     "id": 1,
+     "universidad": "Universidad Nacional de Río Cuarto ",
+     "titulo": "Ciencias Economicas , Economía ",
+     "city": "Rio Cuarto",
+     "inicio": "2019",
+     "final": "2024"
+   },
+   {
+     "id": 2,
+     "universidad": "Universidad Nacional de Río Cuarto ",
+     "titulo": "Ciencias Economicas , Economía ",
+     "city": "Rio Cuarto",
+     "inicio": "2019",
+     "final": "2024"
+   },
+   {
+     "id": 3,
+     "universidad": "Universidad Nacional de Río Cuarto ",
+     "titulo": "Ciencias Economicas , Economía ",
+     "city": "Rio Cuarto",
+     "inicio": "2019",
+     "final": "2024"
+   }] ,
+
+  "experiencias": [
+   {
+     "id": 1,
+     "puesto": "Administrador",
+     "nombre compania": "Electrocom",
+     "inicio": "Jornada Completa",
+     "final": "Jornada Completa",
+
+     "ciudad": "Río Cuarto, Córdoba, Argentina ",
+     "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+   },
+   {
+     "id": 2,
+     "puesto": "Administrador",
+     "nombre compania": "Electrocom",
+     "inicio": "Jornada Completa",
+     "final": "Jornada Completa",
+
+     "ciudad": "Río Cuarto, Córdoba, Argentina ",
+     "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+   }
+
+ ]
+
+
+
+
+}

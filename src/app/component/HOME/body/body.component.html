@@ -1,0 +1,33 @@
+<div *ngFor="let Body of body.slice(body.length-1)">
+    
+    
+    
+    <div class="container">   
+       
+            
+            <div class="col-sm-6 ">
+                    <div class="nota">
+                        <div class="asd">
+                            Nicolas Baseggio
+                        </div>
+                        <div class="asd1">
+                        Full-stack Developer
+                        </div>         
+                    </div>
+            </div>
+            
+            <div class="col-sm-6 ">
+                  <div class="avatar-container">
+                    <img src="{{Body.url_Foto}}" alt="Avatar" >
+                  </div>
+            </div>
+    
+    </div> 
+    <div>
+        <app-button-add type="submit"  *ngIf="isLogged" (click)="crearBody()"></app-button-add>
+         <app-button-edit *ngIf="isLogged" (click)="modificarBody(Body)"></app-button-edit>
+
+    </div>
+    <div class="div1">
+        <p>{{Body.sobreMi}}</p>
+    </div>
